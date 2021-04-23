@@ -1,0 +1,43 @@
+/**
+ *
+ * Colors
+ *
+ **/
+$primary-color: #ffc3a4;
+$secondary-color: #6e44ff;
+
+// Background colors
+$background-color: #16152b;
+
+$font-color: #fff;
+$piece-bg: rgba(17, 15, 27, 0.9);
+$piece-header-bg: #1d1b38;
+$heading-color-animate: #4508d6;
+$button-fill: #292845;
+$tint: #54536d;
+$accent: #abf49d;
+
+// Filter background colors
+$filter-bg: rgba(22, 21, 43, 0.95);
+$filter-fade: linear-gradient(180deg, rgba(22, 21, 43, 0), #16152b);
+
+// Background decorations that looks like pills
+$pill-fill2: #6e44ff;
+$pill-fill1: #292744;
+
+/**
+ *
+ * Typography
+ *
+ **/
+$heading-color: $primary-color;
+$heading-font-family: "Uniform-Black", Arial, sans-serif;
+$subheading-font-family: "Sharpiro-Bold", Arial, sans-serif;
+
+$text-font-family: "Sharpiro-Regular", Arial, sans-serif;
+
+$h1-font-size: 4.5rem;
+$h1-line-height: 1.7;
+$h1-font-weight: 700;
+
+$h2-font-size: 1.3125rem;

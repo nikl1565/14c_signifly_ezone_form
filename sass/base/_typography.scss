@@ -1,0 +1,19 @@
+@use "../utilities/variables";
+
+body {
+    font-family: variables.$text-font-family;
+}
+
+h1 {
+    font-size: variables.$h1-font-size;
+    font-family: variables.$heading-font-family;
+    font-weight: variables.$h1-font-weight;
+    line-height: variables.$h1-line-height;
+    text-transform: uppercase;
+    color: variables.$heading-color;
+}
+
+h2 {
+    color: variables.$heading-color;
+    font-family: variables.$subheading-font-family;
+}
