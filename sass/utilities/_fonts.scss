@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Sharpiro-Regular";
+    src: url("/fonts/sharpiro-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Sharpiro-Bold";
+    src: url("/fonts/sharpiro-bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Uniform-Medium";
+    src: url("/fonts/uniform-pro-con-medium.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Uniform-Black";
+    src: url("/fonts/uniform-pro-con-black.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

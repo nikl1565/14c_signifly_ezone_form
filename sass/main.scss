@@ -1,5 +1,23 @@
-$min-smukke-variabel: red;
+/**
+ *
+ * Utilities
+ *
+ **/
 
-body {
-    background-color: $min-smukke-variabel;
-}
+@use "utilities";
+
+/**
+ *
+ * Base
+ *
+ **/
+
+@use "base";
+
+/**
+ *
+ * Components
+ *
+ **/
+
+@use "components";
