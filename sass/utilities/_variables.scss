@@ -5,6 +5,10 @@
  **/
 $primary-color: #ffc3a4;
 $secondary-color: #6e44ff;
+$color-white: #fff;
+$color-inactive: #a5a5ac;
+$color-form-primary: #f28d6d;
+$color-form-primary-outline: rgba(242, 141, 109, 0.5);
 
 // Background colors
 $background-color: #16152b;
@@ -41,3 +45,25 @@ $h1-line-height: 1.7;
 $h1-font-weight: 700;
 
 $h2-font-size: 1.3125rem;
+
+/**
+ *
+ * Input
+ *
+ **/
+$input-inactive-color: #a5a5ac;
+$input-outline-color: rgba(255, 195, 164, 0.25);
+$input-focus-color: $primary-color;
+
+$input-background-color: transparent;
+$input-border: 1px solid;
+$input-border-color: $input-inactive-color;
+$input-border-radius: 6px;
+$input-color: $input-inactive-color;
+$input-font-family: $text-font-family;
+
+/**
+ *
+ * Button
+ *
+ **/

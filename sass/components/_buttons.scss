@@ -1,0 +1,47 @@
+@use "../utilities" as *;
+
+.button {
+    text-decoration: none;
+    padding: 0.9rem 1rem 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    border: 1px solid $color-inactive;
+    text-align: center;
+    color: $color-inactive;
+    font-family: $heading-font-family;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid $color-inactive;
+    transition: color 0.25s ease-in-out, border 0.25s ease-in-out, transform 0.25s ease-out;
+
+    &:hover {
+        border-color: $color-form-primary;
+        color: $color-form-primary;
+    }
+
+    &:focus {
+        outline: 3px solid transparent;
+        box-shadow: 0 0 0 0.25rem $input-outline-color;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &--primary {
+        background-color: $color-form-primary;
+        color: $color-white;
+        border-color: $color-form-primary;
+        transition: transform 0.25s ease-out;
+
+        &:hover {
+            color: $color-white;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 3px $color-form-primary-outline;
+        }
+    }
+}
