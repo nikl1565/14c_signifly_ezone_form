@@ -1,0 +1,57 @@
+@use "../utilities" as *;
+
+.form-field {
+    background-color: $input-background-color;
+    border: $input-border $input-border-color;
+    border-radius: $input-border-radius;
+    padding: 0.75rem;
+    color: $input-color;
+    font-size: 1rem;
+    font-family: $text-font-family;
+    transition: border 0.25s ease-in-out;
+
+    &:hover {
+        border-color: $input-focus-color;
+    }
+
+    &:focus {
+        border-color: $input-focus-color;
+        outline: 0.25rem transparent;
+        box-shadow: 0 0 0 0.25rem $input-outline-color;
+    }
+}
+
+.form-label {
+    color: $color-white;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    > .form-field {
+        padding-right: 2.5rem;
+
+        &:focus ~ .form-icon > svg {
+            stroke: $input-focus-color;
+        }
+    }
+
+    > .form-icon {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
+        > svg {
+            stroke: $input-color;
+        }
+    }
+}
