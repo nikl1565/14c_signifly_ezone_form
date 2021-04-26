@@ -9,10 +9,3 @@
 @use "base";
 @use "components";
 @use "layout";
-
-body {
-  display: grid;
-  align-content: center;
-  min-height: 100vh;
-  background-color: #16152b;
-}
