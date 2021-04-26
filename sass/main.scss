@@ -1,23 +1,11 @@
 /**
  *
- * Utilities
+ * Main
  *
  **/
 
 @use "utilities";
-
-/**
- *
- * Base
- *
- **/
-
+@use "vendors";
 @use "base";
-
-/**
- *
- * Components
- *
- **/
-
 @use "components";
+@use "layout";
