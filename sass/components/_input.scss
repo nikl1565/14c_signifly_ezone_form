@@ -9,6 +9,7 @@
     font-size: 1rem;
     font-family: $text-font-family;
     transition: border 0.25s ease-in-out;
+    flex-grow: 1;
 
     &:hover {
         border-color: $input-focus-color;
