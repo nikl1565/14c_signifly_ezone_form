@@ -1,19 +1,19 @@
-@use "../utilities/variables";
+@use "../utilities" as u;
 
 body {
-    font-family: variables.$text-font-family;
+    font-family: u.$text-font-family;
 }
 
 h1 {
-    font-size: variables.$h1-font-size;
-    font-family: variables.$heading-font-family;
-    font-weight: variables.$h1-font-weight;
-    line-height: variables.$h1-line-height;
+    font-size: u.$h1-font-size;
+    font-family: u.$heading-font-family;
+    font-weight: u.$h1-font-weight;
+    line-height: u.$h1-line-height;
     text-transform: uppercase;
-    color: variables.$heading-color;
+    color: u.$heading-color;
 }
 
 h2 {
-    color: variables.$heading-color;
-    font-family: variables.$subheading-font-family;
+    color: u.$heading-color;
+    font-family: u.$subheading-font-family;
 }
