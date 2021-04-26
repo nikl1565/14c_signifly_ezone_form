@@ -1,22 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
-    </head>
-    <body>
-        <h1>Ezone Esports h1</h1>
-        <h2>Ezone Esports h2</h2>
-        <h3>Ezone Esports h3</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla magni atque non vero explicabo, consequatur adipisci harum repellat cum dicta quibusdam in amet. Ducimus neque asperiores aliquid hic ad omnis.</p>
-        <ul>
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <li>List item 3</li>
-            <li>List item 4</li>
-        </ul>
-        <script type="module" src="./main.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Ezone Esports h1</h1>
+    <h2>Ezone Esports h2</h2>
+    <h3>Ezone Esports h3</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla magni atque non vero explicabo, consequatur adipisci harum repellat cum dicta quibusdam in amet. Ducimus neque asperiores aliquid hic ad omnis.</p>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+    </ul>
+
+    <form>
+      <!-- FIRST INFO BOX -->
+      <div class="infogroup">
+        <img src="" alt="" />
+        <p>Here you will be asked a series o questions, which will help us show the content which is most relevant to you.</p>
+        <div class="buttongroup">
+          <button>Skip</button>
+          <button>I understand</button>
+        </div>
+      </div>
+      <!-- SECOND INFO BOX -->
+      <div class="infogroup">
+        <img src="" alt="" />
+        <p>To help us create/share relevant content with you, we need to know what games you are currently playing.</p>
+        <div class="buttongroup">
+          <button>Back</button>
+          <button>Let's do this!</button>
+        </div>
+      </div>
+
+      <!-- THIRD INFO BOX -->
+      <div class="infogroup">
+        <img src="" alt="" />
+        <p>To help us create/share relevant content with you, we need to get to know you better by asking questions about your performance.</p>
+        <div class="buttongroup">
+          <button>Back</button>
+          <button>Let's do this!</button>
+        </div>
+      </div>
+
+      <!-- SLEEP AND STRESS -->
+      <fieldset>
+        <legend>Sleep and Stress</legend>
+
+        <!-- PLAYTIME -->
+        <div class="formgroup">
+          <label for="playtime">How many hours do you play video games a day?</label>
+          <!-- <select name="playtime" id="playtime">
+            <option value="0">0</option>
+            <option value="1-3">1-3</option>
+            <option value="3-6">3-6</option>
+            <option value="6-9">6-9</option>
+            <option value="9-12">9-12</option>
+            <option value="12+">12+</option>
+          </select> -->
+          <div class="radiogroup">
+            <label for="playtime">0</label>
+            <input id="playtime" type="radio" name="playtime" value="0" checked />
+          </div>
+
+          <div class="radiogroup">
+            <label for="playtime">1-3</label>
+            <input id="playtime" type="radio" name="playtime" value="1-3" />
+          </div>
+          <div class="radiogroup">
+            <label for="playtime">3-6</label>
+            <input id="playtime" type="radio" name="playtime" value="3-6" />
+          </div>
+          <div class="radiogroup">
+            <label for="playtime">6-9</label>
+            <input id="playtime" type="radio" name="playtime" value="6-9" />
+          </div>
+          <div class="radiogroup">
+            <label for="playtime">9-12</label>
+            <input id="playtime" type="radio" name="playtime" value="9-12" />
+          </div>
+          <div class="radiogroup">
+            <label for="playtime">12+</label>
+            <input id="playtime" type="radio" name="playtime" value="12+" />
+          </div>
+        </div>
+
+        <!-- SLEEP -->
+        <div class="formgroup">
+          <label for="sleep">How many hours of sleep do you get in a day?</label>
+          <div class="radiogroup">
+            <label for="sleep">1-3</label>
+            <input id="sleep" type="radio" name="sleep" value="1-3" />
+          </div>
+          <div class="radiogroup">
+            <label for="sleep">3-6</label>
+            <input id="sleep" type="radio" name="sleep" value="3-6" />
+          </div>
+          <div class="radiogroup">
+            <label for="sleep">6-9</label>
+            <input id="sleep" type="radio" name="sleep" value="6-9" />
+          </div>
+          <div class="radiogroup">
+            <label for="sleep">9-12</label>
+            <input id="sleep" type="radio" name="sleep" value="9-12" />
+          </div>
+          <div class="radiogroup">
+            <label for="sleep">12+</label>
+            <input id="sleep" type="radio" name="sleep" value="12+" />
+          </div>
+        </div>
+
+        <!-- WELL-RESTED -->
+        <div class="formgroup">
+          <label for="wellrested">Do you feel well-rested after a night of sleep?</label>
+          <div class="radiogroup">
+            <label for="wellrested">Yes</label>
+            <input id="wellrested" type="radio" name="wellrested" value="yes" />
+          </div>
+          <div class="radiogroup">
+            <label for="wellrested">No</label>
+            <input id="wellrested" type="radio" name="wellrested" value="no" />
+          </div>
+        </div>
+
+        <!-- HEADACHE -->
+        <div class="formgroup">
+          <label for="headache">How often do you get headaches a month?</label>
+          <div class="radiogroup">
+            <label for="headache">0</label>
+            <input id="headache" type="radio" name="headache" value="0" />
+          </div>
+          <div class="radiogroup">
+            <label for="headache">1-2</label>
+            <input id="headache" type="radio" name="headache" value="1-2" />
+          </div>
+          <div class="radiogroup">
+            <label for="headache">2-3</label>
+            <input id="headache" type="radio" name="headache" value="2-3" />
+          </div>
+          <div class="radiogroup">
+            <label for="headache">3-4</label>
+            <input id="headache" type="radio" name="headache" value="3-4" />
+          </div>
+          <div class="radiogroup">
+            <label for="headache">4-5</label>
+            <input id="headache" type="radio" name="headache" value="4-5" />
+          </div>
+          <div class="radiogroup">
+            <label for="headache">5-6</label>
+            <input id="headache" type="radio" name="headache" value="5-6" />
+          </div>
+          <div class="radiogroup">
+            <label for="headache">6+</label>
+            <input id="headache" type="radio" name="headache" value="6+" />
+          </div>
+        </div>
+
+        <!-- PREV AND NEXT BUTTONS -->
+        <div class="buttongroup">
+          <button>Back</button>
+          <button>Next</button>
+        </div>
+      </fieldset>
+
+      <!-- NUTRITION AND EXERCISE -->
+      <fieldset>
+        <legend>Nutrition and Exercise</legend>
+        <span>Tell us a bit about your nutritional and work-out habits.</span>
+
+        <div class="formgroup">
+          <div class="optiongroup">
+            <label for="exercise">On average how many days do you exercise each week?</label>
+            <select name="exercise" id="exercise">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8+">8+</option>
+            </select>
+          </div>
+
+          <div class="optiongroup">
+            <label for="meals">On average how many meals do you eat in a day?</label>
+            <select name="meals" id="meals">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8+">8+</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- PREV AND NEXT BUTTONS -->
+        <div class="buttongroup">
+          <button>Back</button>
+          <button>Next</button>
+        </div>
+      </fieldset>
+    </form>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
