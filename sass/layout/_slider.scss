@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form_slide {
+  display: flex;
+  flex-direction: row;
+
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+.form_slide_section {
+  display: flex;
+  flex: 0 0 auto;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.side-by-side {
+  top: 50%;
+  left: 50%;
+}
