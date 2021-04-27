@@ -1,4 +1,14 @@
 import "./sass/main.scss";
-import {start} from "./js/choosegame"
+import { start } from "./js/choosegame";
+import { postForm } from "./js/post";
 
-start();
+window.addEventListener("DOMContentLoaded", initialize);
+
+function initialize() {
+  start();
+  addListeners();
+}
+
+function addListeners() {
+  document.querySelector("button[type=submit]").addEventListener("click", postForm);
+}
