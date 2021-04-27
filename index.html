@@ -76,136 +76,46 @@
                         </fieldset>
                     </article>
 
-    <form>
-      <div class="form_slide">
-        <!-- FIRST INFO BOX -->
-        <section id="form-slide_first" class="form_slide_section">
-          <div class="infogroup">
-            <div class="info-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="16" x2="12" y2="12"></line>
-                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-              </svg>
-            </div>
-            <p>Here you will be asked a series of questions, which will help us show the content which is most relevant to you.</p>
-            <div class="side-by-side">
-              <button class="button button--primary" onclick="window.location.href='#form-slide_second';" value="Go to next slide">I understand</button>
-            </div>
-          </div>
-        </section>
-        <section id="form-slide_second" class="form_slide_section">
-          <!-- SECOND INFO BOX -->
-          <div class="infogroup">
-            <div class="info-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="22" y1="12" x2="18" y2="12"></line>
-                <line x1="6" y1="12" x2="2" y2="12"></line>
-                <line x1="12" y1="6" x2="12" y2="2"></line>
-                <line x1="12" y1="22" x2="12" y2="18"></line>
-              </svg>
-            </div>
-            <p>To help us create/share relevant content with you, we need to know what games you are currently playing.</p>
-            <div class="side-by-side">
-              <button class="button" onclick="window.location.href='#form-slide_first';" value="Go to last slide">Back</button>
-              <button class="button button--primary" onclick="window.location.href='#choose_game';" value="Go to next slide">Confirm</button>
-            </div>
-          </div>
-        </section>
-        <section id="choose_game" class="form_slide_section">
-          <h1>Choose your Game</h1>
-          <article id="featured_games">
-            <fieldset>
-              <label class="container" for="dota">
-                <input type="checkbox" id="dota" value="dota" />
-                <span></span>
-              </label>
-              <label class="container" for="lol">
-                <input type="checkbox" id="lol" value="lol" />
-                <span></span>
-              </label>
-              <label class="container" for="csgo">
-                <input type="checkbox" id="csgo" value="csgo" />
-                <span></span>
-              </label>
-              <label class="container" for="fortnite">
-                <input type="checkbox" id="fortnite" value="fortnite" />
-                <span></span>
-              </label>
-              <label class="container" for="starcraft">
-                <input type="checkbox" id="starcraft" value="starcraft" />
-                <span></span>
-              </label>
-              <label class="container" for="pubg">
-                <input type="checkbox" id="pubg" value="pubg" />
-                <span></span>
-              </label>
-              <label class="container" for="valorant">
-                <input type="checkbox" id="valorant" value="valorant" />
-                <span></span>
-              </label>
-              <label class="container" for="overwatch">
-                <input type="checkbox" id="overwatch" value="overwatch" />
-                <span></span>
-              </label>
-              <label class="container" for="rocket_league">
-                <input type="checkbox" id="rocket_league" value="rocket_league" />
-                <span></span>
-              </label>
-              <label class="container" for="cod">
-                <input type="checkbox" id="cod" value="cod" />
-                <span></span>
-              </label>
-            </fieldset>
-          </article>
+                    <div class="side-by-side">
+                        <button class="button" onclick="window.location.href='#form-slide_second';" value="Go to last slide">Back</button>
+                        <button class="button button--primary" onclick="window.location.href='#form-slide_third';" value="Go to next slide">Confirm</button>
+                    </div>
+                </section>
+                <section id="form-slide_third" class="form_slide_section">
+                    <!-- THIRD INFO BOX -->
+                    <div class="infogroup">
+                        <!--<img src="" alt="" />-->
+                        <p>To help us create/share relevant content with you, we need to get to know you better by asking questions about your performance.</p>
+                        <div class="side-by-side">
+                            <button class="button" onclick="window.location.href='#choose_game';" value="Go to last slide">Back</button>
+                            <button class="button button--primary" onclick="window.location.href='#form-slide_fourth';" value="Go to next slide">Confirm</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="form-slide_fourth" class="form_slide_section">
+                    <!-- SLEEP AND STRESS -->
+                    <fieldset>
+                        <legend>Sleep and Stress</legend>
 
-          <div class="side-by-side">
-            <button class="button" onclick="window.location.href='#form-slide_second';" value="Go to last slide">Back</button>
-            <button class="button button--primary" onclick="window.location.href='#form-slide_third';" value="Go to next slide">Confirm</button>
-          </div>
-        </section>
-        <section id="form-slide_third" class="form_slide_section">
-          <!-- THIRD INFO BOX -->
-          <div class="infogroup">
-            <div class="info-logo">
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="65"
-                height="65"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-info"
-              >
-                <path d="M13.75,4.87S12.2,3.47,11.46,5s2,1.31,2.31,1.27,1.9-.5,2.09.54-.08,1.28-1.27,1.7a25.23,25.23,0,0,1-5.8.31" />
-                <line x1="9.91" y1="8.85" x2="9.18" y2="14.75" />
-                <path
-                  d="M8,15.91s4.09-4.4,5.17-4.75,4.6-1.59,7.31,1.47c0,0-.08,9.27-.27,9.62,0,0-12.45-.54-13.84-1.2A5.84,5.84,0,0,1,2.84,14.4,41.15,41.15,0,0,1,6.36,5a12.83,12.83,0,0,1,2-1.82c.31-.12,1.05-1.55,2.82-1.58a7.48,7.48,0,0,1,4.54,1.57,3.28,3.28,0,0,1-.17,3"
-                />
-                <path d="M12,18.18s3.6,1.5,5.75-.88" />
-              </svg>
-            </div>
-            <p>To help us create/share relevant content with you, we need to get to know you better by asking questions about your performance.</p>
-            <div class="side-by-side">
-              <button class="button" onclick="window.location.href='#choose_game';" value="Go to last slide">Back</button>
-              <button class="button button--primary" onclick="window.location.href='#form-slide_fourth';" value="Go to next slide">Confirm</button>
-            </div>
-          </div>
-        </section>
-        <section id="form-slide_fourth" class="form_slide_section">
-          <!-- SLEEP AND STRESS -->
-          <fieldset>
-            <legend>Sleep and Stress</legend>
+                        <!-- PLAYTIME -->
+                        <div class="formgroup">
+                            <p>How many hours do you play video games a day?</p>
+                            <!-- <select name="playtime" id="playtime">
+            <option value="0">0</option>
+            <option value="1-3">1-3</option>
+            <option value="3-6">3-6</option>
+            <option value="6-9">6-9</option>
+            <option value="9-12">9-12</option>
+            <option value="12+">12+</option>
+          </select> -->
 
-            <!-- PLAYTIME -->
-            <div class="formgroup">
-              <p>How many hours do you play video games a day?</p>
+                            <!-- 
+            <div class="radio-group">
+              <input class="form-radio" id="playtime_1" type="radio" name="playtime" value="1-3" />
+              <label for="playtime_1">1-3</label>
+            </div>
+          -->
+
                             <div class="radio-group">
                                 <input class="form-radio" id="playtime_0" type="radio" name="playtime" value="0" checked />
                                 <label for="playtime_0">0</label>
@@ -317,7 +227,7 @@
                         <legend>Nutrition and Exercise</legend>
                         <span>Tell us a bit about your nutritional and work-out habits.</span>
 
-                       <div class="formgroup">
+                        <div class="formgroup">
                             <div class="optiongroup">
                                 <label for="exercise">On average how many days do you exercise each week?</label>
                                 <select class="form-field" name="exercise" id="exercise">
@@ -332,7 +242,6 @@
                                     <option value="8+">8+</option>
                                 </select>
                             </div>
-
 
                             <div class="optiongroup">
                                 <label for="meals">On average how many meals do you eat in a day?</label>
@@ -349,64 +258,73 @@
                                 </select>
                             </div>
                         </div>
-                   
-            <!-- PREV AND NEXT BUTTONS -->
-            <div class="side-by-side">
-              <button class="button" onclick="window.location.href='#form-slide_fourth';" value="Go to last slide">Back</button>
-              <button class="button button--primary" onclick="window.location.href='#form-slide_sixth';" value="Go to next slide">Confirm</button>
-            </div>
-          </fieldset>
-        </section>
-        
-        <section id="form-slide_sixth" class="form_slide_section">
-          <div>
-            <!-- SIGNUP -->
-            <h2>Create Account</h2>
-            <!-- USERNAME -->
-            <div class="form-group">
-              <label for="username" class="form-label">Username</label>
-              <div class="input-group">
-                <input class="form-field" type="text" name="username" id="username" placeholder="username or gametag" />
-                <span class="form-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </span>
-              </div>
-            </div>
-            
-            <!-- PASSWORD -->
-            <div class="form-group">
-              <label class="form-label" for="password">Password</label>
-              <div class="input-group">
-                <input class="form-field" type="text" name="password" id="password" placeholder="enter password" />
-                <span class="form-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                  </svg>
-                </span>
-              </div>
-            </div>
 
-            <!-- CONFIRM PASSWORD -->
-            <div class="form-group">
-              <label class="form-label" for="confirm_password">Confirm Password</label>
-              <div class="input-group">
-                <input class="form-field" type="text" name="confirm_password" id="confirm_password" placeholder="confirm password" />
-                <span class="form-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                  </svg>
-                </span>
-              </div>
-            </div>
-                       
-              
-                   
+                        <!-- PREV AND NEXT BUTTONS -->
+                        <div class="side-by-side">
+                            <button class="button" onclick="window.location.href='#form-slide_fourth';" value="Go to last slide">Back</button>
+                            <button class="button button--primary" onclick="window.location.href='#form-slide_sixth';" value="Go to next slide">Confirm</button>
+                        </div>
+                    </fieldset>
+                </section>
+                <section id="form-slide_sixth" class="form_slide_section">
+                    <div>
+                        <!-- SIGNUP -->
+                        <h2>Create Account</h2>
+                        <!-- USERNAME -->
+                        <div class="form-group">
+                            <label for="username" class="form-label">Username</label>
+                            <div class="input-group">
+                                <input class="form-field" type="text" name="username" id="username" placeholder="username or gametag" />
+                                <span class="form-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
 
+                        <!-- EMAIL ADDESS -->
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email address</label>
+                            <div class="input-group">
+                                <input class="form-field" type="text" name="email" id="email" placeholder="email address" />
+                                <span class="form-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="form-group">
+                            <label class="form-label" for="password">Password</label>
+                            <div class="input-group">
+                                <input class="form-field" type="text" name="password" id="password" placeholder="enter password" />
+                                <span class="form-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="form-group">
+                            <label class="form-label" for="confirm_password">Confirm Password</label>
+                            <div class="input-group">
+                                <input class="form-field" type="text" name="confirm_password" id="confirm_password" placeholder="confirm password" />
+                                <span class="form-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
 
                         <!-- COUNTRY -->
                         <div class="form-group">
@@ -659,7 +577,7 @@
                             </div>
                         </div>
 
-                        <!-- BIRTHDAY -->
+                        <!-- CONFIRM PASSWORD -->
                         <div class="form-group">
                             <label class="form-label" for="day">Birthday</label>
                             <div class="input-group">
