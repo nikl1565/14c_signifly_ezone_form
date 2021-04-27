@@ -1,0 +1,52 @@
+@use "../utilities" as *;
+
+.container {
+    padding: 3rem;
+}
+
+.form-select-group {
+    position: relative;
+
+    .form-select {
+        appearance: none;
+        cursor: pointer;
+        background-color: $input-background-color;
+        border: $input-border $input-border-color;
+        border-radius: $input-border-radius;
+        padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+        color: $input-color;
+        font-size: 1rem;
+        font-family: $text-font-family;
+        transition: border 0.25s ease-in-out;
+        width: 100%;
+
+        &:hover {
+            border-color: $input-focus-color;
+        }
+
+        &:focus {
+            border-color: $input-focus-color;
+            outline: 0.25rem transparent;
+            box-shadow: 0 0 0 0.25rem $input-outline-color;
+        }
+
+        &:focus ~ .form-select-arrow > svg {
+            stroke: $input-focus-color;
+        }
+    }
+
+    .form-select-arrow {
+        position: absolute;
+        padding: 0.75rem 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+
+        > svg {
+            stroke: $input-inactive-color;
+        }
+    }
+}
