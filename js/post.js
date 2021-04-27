@@ -1,4 +1,6 @@
-export function postForm(event) {
+import { settings } from "./settings";
+
+export async function postForm(event) {
   event.preventDefault();
   // Get form
   const form = document.querySelector("form");
@@ -10,6 +12,8 @@ export function postForm(event) {
 
   const formFields = Object.fromEntries(formData.entries());
   const games = formData.getAll("games");
+
+  console.log(formFields);
 
   const formObject = {
     username: formFields.username,
@@ -28,5 +32,26 @@ export function postForm(event) {
     meals: formFields.meals,
   };
 
-  console.log(formObject);
+  const postData = JSON.stringify(formObject);
+
+  // Send the game object to the server
+  const response = await fetch(settings.database.url, {
+    method: "POST",
+    headers: settings.database.headers,
+    body: postData,
+  });
+
+  // If successfully added to server
+  if (response.ok) {
+    const json = await response.json();
+    console.log(json);
+
+    // TODO: Remove this - Only for fun
+    document.querySelector("button[type=submit]").style.backgroundColor = "green";
+  } else {
+    // Else show error
+    console.log(`HTTP-Error: ${response.status}`);
+  }
+
+  console.log(postData);
 }
