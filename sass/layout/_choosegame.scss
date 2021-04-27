@@ -139,12 +139,10 @@
 #choose_game fieldset span {
   width: calc(100% + 40px);
   height: calc(100% + 40px);
-  border-radius: 10%;
+  border-radius: 6%;
   margin-left: -20px;
   margin-top: -20px;
-  background-image: none;
   display: flex;
-  position: relative;
   background-color: #cacffa;
   opacity: 0;
   padding: -50px;
@@ -152,11 +150,11 @@
 }
 
 #choose_game fieldset input[type="checkbox"]:checked + span {
-  opacity: 0.08;
+  opacity: 0.06;
 }
 
 #choose_game fieldset .container:hover span {
-  opacity: 0.1;
+  opacity: 0.12 !important;
 }
 
 @media (min-width: 1000px) {
@@ -175,7 +173,6 @@
     }
 
     :nth-child(3) {
-      width: 230px;
       top: 200px;
     }
 
@@ -190,7 +187,6 @@
     }
 
     :nth-child(6) {
-      width: 175px;
       top: 200px;
       right: 165px;
     }
@@ -206,15 +202,11 @@
     }
 
     :nth-child(9) {
-      height: 73px;
-      width: 200px;
       top: 230px;
       right: -80px;
     }
 
     :nth-child(10) {
-      height: 35px;
-      width: 190px;
       top: 264px;
       left: -10px;
     }

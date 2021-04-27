@@ -1,4 +1,4 @@
 import "./sass/main.scss";
-import {start} from "./js/choosegame"
+import {startChooseGame} from "./js/choosegame"
 
-start();
+startChooseGame();
