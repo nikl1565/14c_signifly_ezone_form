@@ -6,6 +6,7 @@
 
 .form-select-group {
     position: relative;
+    display: inline-flex;
 
     .form-select {
         appearance: none;
@@ -18,7 +19,6 @@
         font-size: 1rem;
         font-family: $text-font-family;
         transition: border 0.25s ease-in-out;
-        width: 100%;
 
         &:hover {
             border-color: $input-focus-color;

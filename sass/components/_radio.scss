@@ -3,6 +3,7 @@
 .radio-group {
     display: flex;
     flex-direction: row;
+    position: relative;
 
     > .form-radio {
         position: absolute;
