@@ -1,6 +1,7 @@
 import { settings } from "./settings";
 
-export async function postForm() {
+export async function postForm(e) {
+  e.preventDefault();
   // Get form
   const form = document.querySelector("form");
 
@@ -16,8 +17,8 @@ export async function postForm() {
 
   const formObject = {
     username: formFields.username,
-    password: formFields.password,
     email: formFields.email,
+    password: formFields.password,
     country: formFields.country,
     date: formFields.day,
     month: formFields.month,
@@ -45,8 +46,11 @@ export async function postForm() {
     const json = await response.json();
     console.log(json);
 
+    const submitBtn = document.querySelector("button[type=submit]");
     // TODO: Remove this - Only for fun
-    document.querySelector("button[type=submit]").style.backgroundColor = "green";
+    submitBtn.style.backgroundColor = "#abf49d";
+    submitBtn.style.borderColor = "#abf49d";
+    submitBtn.textContent = "Submitted";
   } else {
     // Else show error
     console.log(`HTTP-Error: ${response.status}`);
