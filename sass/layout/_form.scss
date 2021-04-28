@@ -1,24 +1,24 @@
 @use "../utilities" as u;
 .infogroup {
-    // margin not working
-    margin: 20px auto;
+  // margin not working
+  margin: 20px auto;
 
-    .info-logo {
-        color: u.$heading-color;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+  .info-logo {
+    color: u.$heading-color;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    button {
-        margin-top: 20px;
-    }
+  button {
+    margin-top: 20px;
+  }
 }
 
 .birthday-form-group {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 label {
-    display: block;
+  display: block;
 }
