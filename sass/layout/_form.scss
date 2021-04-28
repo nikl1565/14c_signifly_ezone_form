@@ -111,7 +111,7 @@ legend {
 
     &::before {
         transform: rotate(180deg);
-        content: url("icons/pill.svg");
+        content: url("/icons/pill.svg");
         display: block;
         position: absolute;
         top: -129.5px;
@@ -119,7 +119,7 @@ legend {
     }
 
     &::after {
-        content: url("icons/pill.svg");
+        content: url("/icons/pill.svg");
         display: block;
         position: absolute;
         bottom: -129.5px;
