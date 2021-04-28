@@ -1,0 +1,8 @@
+*.html eol=lf
+*.js   eol=lf
+*.json eol=lf
+*.scss eol=lf
+*.md   eol=lf
+*.svg  eol=lf
+*.xml  eol=lf
+*.css  eol=lf
