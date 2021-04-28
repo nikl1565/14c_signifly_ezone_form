@@ -1,0 +1,26 @@
+#landing_page {
+  background-image: url(../../imgs/ezone-esports_landingpage.png);
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-position: 50% 0%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    margin-top: 300px;
+    margin-left: 1rem;
+  }
+}
+
+.unhide {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}

@@ -18,10 +18,12 @@
     display: flex;
     gap: 1rem;
 
+
     .form-group label {
         color: u.$input-color;
         font-size: 0.8em;
     }
+
 }
 
 label {
@@ -42,12 +44,12 @@ label {
 }
 
 fieldset {
-    padding: 0;
-    border: 0;
+  padding: 0;
+  border: 0;
 }
 
 legend {
-    padding: 0;
+  padding: 0;
 }
 
 .form-container {

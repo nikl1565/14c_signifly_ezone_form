@@ -1,182 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ezone-Esports</title>
-    </head>
-    <body>
-        <nav>
-            <div id="scrollProgressBarEmpty">
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ezone-Esports</title>
+  </head>
+  <body>
+    <section id="landing_page">
+      <button class="button button--primary">Our experts</button>
+      <button class="button">Are you in the Ezone?</button>
+    </section>
+
+    <nav class="hidden">
+      <div id="scrollProgressBarEmpty">
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+      </div>
+      <div id="scrollProgressBar">
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+        <div class="scrollBar"></div>
+        <div class="progressPoint"></div>
+      </div>
+    </nav>
+    <form>
+      <div class="form_slide">
+        <section id="form-slide_first" class="form_slide_section">
+          <div class="form-container">
+            <!-- FIRST INFO BOX -->
+            <div class="infogroup">
+              <div class="info-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+              </div>
+              <p>Here you will be asked a series of questions, which will help us show the content which is most relevant to you.</p>
+              <div class="side-by-side">
+                <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_second';" value="Go to next slide">Let's start</button>
+              </div>
             </div>
-            <div id="scrollProgressBar">
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
-                <div class="scrollBar"></div>
-                <div class="progressPoint"></div>
+          </div>
+        </section>
+
+        <section id="form-slide_second" class="form_slide_section">
+          <div class="form-container">
+            <!-- SECOND INFO BOX -->
+            <div class="infogroup">
+              <div class="info-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="22" y1="12" x2="18" y2="12"></line>
+                  <line x1="6" y1="12" x2="2" y2="12"></line>
+                  <line x1="12" y1="6" x2="12" y2="2"></line>
+                  <line x1="12" y1="22" x2="12" y2="18"></line>
+                </svg>
+              </div>
+              <p>To help us create/share relevant content with you, we need to know what games you are currently playing.</p>
+              <div class="side-by-side">
+                <button type="button" class="button" onclick="window.location.href='#form-slide_first';" value="Go to last slide">Back</button>
+                <button type="button" class="button button--primary" onclick="window.location.href='#choose_game';" value="Go to next slide">Got it</button>
+              </div>
             </div>
-        </nav>
-        <form>
-            <div class="form_slide">
-                <section id="form-slide_first" class="form_slide_section">
-                    <div class="form-container">
-                        <!-- FIRST INFO BOX -->
-                        <div class="infogroup">
-                            <div class="info-logo">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                                </svg>
-                            </div>
-                            <p>Here you will be asked a series of questions, which will help us show the content which is most relevant to you.</p>
-                            <div class="side-by-side">
-                                <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_second';" value="Go to next slide">Let's start</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+          </div>
+        </section>
+        
+        <section id="choose_game" class="form_slide_section">
+          <div class="form-container">
+            <article id="featured_games">
+              <fieldset>
+                <legend class="form-heading">Choose your Games</legend>
+                <label class="container" for="dota">
+                  <input type="checkbox" name="games" id="dota" value="dota" />
+                  <span></span>
+                </label>
+                <label class="container" for="lol">
+                  <input type="checkbox" name="games" id="lol" value="lol" />
+                  <span></span>
+                </label>
+                <label class="container" for="csgo">
+                  <input type="checkbox" name="games" id="csgo" value="csgo" />
+                  <span></span>
+                </label>
+                <label class="container" for="fortnite">
+                  <input type="checkbox" name="games" id="fortnite" value="fortnite" />
+                  <span></span>
+                </label>
+                <label class="container" for="starcraft">
+                  <input type="checkbox" name="games" id="starcraft" value="starcraft" />
+                  <span></span>
+                </label>
+                <label class="container" for="pubg">
+                  <input type="checkbox" name="games" id="pubg" value="pubg" />
+                  <span></span>
+                </label>
+                <label class="container" for="valorant">
+                  <input type="checkbox" name="games" id="valorant" value="valorant" />
+                  <span></span>
+                </label>
+                <label class="container" for="overwatch">
+                  <input type="checkbox" name="games" id="overwatch" value="overwatch" />
+                  <span></span>
+                </label>
+                <label class="container" for="rocket_league">
+                  <input type="checkbox" name="games" id="rocket_league" value="rocket_league" />
+                  <span></span>
+                </label>
+                <label class="container" for="cod">
+                  <input type="checkbox" name="games" id="cod" value="cod" />
+                  <span></span>
+                </label>
+              </fieldset>
+            </article>
 
-                <section id="form-slide_second" class="form_slide_section">
-                    <div class="form-container">
-                        <!-- SECOND INFO BOX -->
-                        <div class="infogroup">
-                            <div class="info-logo">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="22" y1="12" x2="18" y2="12"></line>
-                                    <line x1="6" y1="12" x2="2" y2="12"></line>
-                                    <line x1="12" y1="6" x2="12" y2="2"></line>
-                                    <line x1="12" y1="22" x2="12" y2="18"></line>
-                                </svg>
-                            </div>
-                            <p>To help us create/share relevant content with you, we need to know what games you are currently playing.</p>
-                            <div class="side-by-side">
-                                <button type="button" class="button" onclick="window.location.href='#form-slide_first';" value="Go to last slide">Back</button>
-                                <button type="button" class="button button--primary" onclick="window.location.href='#choose_game';" value="Go to next slide">Got it</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <div class="side-by-side">
+              <button type="button" class="button" onclick="window.location.href='#form-slide_second';" value="Go to last slide">Back</button>
+              <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_third';" value="Go to next slide">Continue</button>
 
-                <section id="choose_game" class="form_slide_section">
-                    <div class="form-container">
-                        <h2 class="form-heading">Choose your Games</h2>
-                        <article id="featured_games">
-                            <fieldset>
-                                <label class="container" for="dota">
-                                    <input type="checkbox" name="games" id="dota" value="dota" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="lol">
-                                    <input type="checkbox" name="games" id="lol" value="lol" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="csgo">
-                                    <input type="checkbox" name="games" id="csgo" value="csgo" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="fortnite">
-                                    <input type="checkbox" name="games" id="fortnite" value="fortnite" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="starcraft">
-                                    <input type="checkbox" name="games" id="starcraft" value="starcraft" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="pubg">
-                                    <input type="checkbox" name="games" id="pubg" value="pubg" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="valorant">
-                                    <input type="checkbox" name="games" id="valorant" value="valorant" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="overwatch">
-                                    <input type="checkbox" name="games" id="overwatch" value="overwatch" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="rocket_league">
-                                    <input type="checkbox" name="games" id="rocket_league" value="rocket_league" />
-                                    <span></span>
-                                </label>
-                                <label class="container" for="cod">
-                                    <input type="checkbox" name="games" id="cod" value="cod" />
-                                    <span></span>
-                                </label>
-                            </fieldset>
-                        </article>
-
-                        <div class="side-by-side">
-                            <button type="button" class="button" onclick="window.location.href='#form-slide_second';" value="Go to last slide">Back</button>
-                            <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_third';" value="Go to next slide">Continue</button>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="form-slide_third" class="form_slide_section">
-                    <div class="form-container">
-                        <!-- THIRD INFO BOX -->
-                        <div class="infogroup">
-                            <div class="info-logo">
-                                <svg
-                                    id="Layer_1"
-                                    data-name="Layer 1"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="50"
-                                    height="50"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-chevron-down"
-                                >
-                                    <path d="M13.75,4.87S12.2,3.47,11.46,5s2,1.31,2.31,1.27,1.9-.5,2.09.54-.08,1.28-1.27,1.7a25.23,25.23,0,0,1-5.8.31" />
-                                    <line x1="9.91" y1="8.85" x2="9.18" y2="14.75" />
-                                    <path
-                                        d="M8,15.91s4.09-4.4,5.17-4.75,4.6-1.59,7.31,1.47c0,0-.08,9.27-.27,9.62,0,0-12.45-.54-13.84-1.2A5.84,5.84,0,0,1,2.84,14.4,41.15,41.15,0,0,1,6.36,5a12.83,12.83,0,0,1,2-1.82c.31-.12,1.05-1.55,2.82-1.58a7.48,7.48,0,0,1,4.54,1.57,3.28,3.28,0,0,1-.17,3"
-                                    />
-                                    <path d="M12,18.18s3.6,1.5,5.75-.88" />
-                                </svg>
-                            </div>
-                            <p>To help us create/share relevant content with you, we need to get to know you better by asking questions about your performance.</p>
-                            <div class="side-by-side">
-                                <button type="button" class="button" onclick="window.location.href='#choose_game';" value="Go to last slide">Back</button>
-                                <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_fourth';" value="Go to next slide">Got it</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+            </div>
+          </div>
+        </section>
+        
+        <section id="form-slide_third" class="form_slide_section">
+          <div class="form-container">
+            <!-- THIRD INFO BOX -->
+            <div class="infogroup">
+              <div class="info-logo">
+                <svg
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-down"
+                >
+                  <path d="M13.75,4.87S12.2,3.47,11.46,5s2,1.31,2.31,1.27,1.9-.5,2.09.54-.08,1.28-1.27,1.7a25.23,25.23,0,0,1-5.8.31" />
+                  <line x1="9.91" y1="8.85" x2="9.18" y2="14.75" />
+                  <path
+                    d="M8,15.91s4.09-4.4,5.17-4.75,4.6-1.59,7.31,1.47c0,0-.08,9.27-.27,9.62,0,0-12.45-.54-13.84-1.2A5.84,5.84,0,0,1,2.84,14.4,41.15,41.15,0,0,1,6.36,5a12.83,12.83,0,0,1,2-1.82c.31-.12,1.05-1.55,2.82-1.58a7.48,7.48,0,0,1,4.54,1.57,3.28,3.28,0,0,1-.17,3"
+                  />
+                  <path d="M12,18.18s3.6,1.5,5.75-.88" />
+                </svg>
+              </div>
+              <p>To help us create/share relevant content with you, we need to get to know you better by asking questions about your performance.</p>
+              <div class="side-by-side">
+                <button type="button" class="button" onclick="window.location.href='#choose_game';" value="Go to last slide">Back</button>
+                <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_fourth';" value="Go to next slide">Got it</button>
+              </div>
+            </div>
+          </div>
+        </section>
                 <section id="form-slide_fourth" class="form_slide_section">
                     <div class="form-container">
                         <!-- SLEEP AND STRESS -->
