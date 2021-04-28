@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: start;
   background-color: $background-color;
-
+  padding-top: 25px;
+  padding-bottom: 25px;
   overflow-y: scroll;
 
   h1 {
@@ -49,7 +50,7 @@
     left: 0;
   }
   .container:nth-child(1):hover {
-    background-image: url("./icons/games_svg/dota.svg");
+    background-image: url("./icons/games_svg/dota.svg") !important;
   }
 
   .container:nth-child(2) {
@@ -58,7 +59,7 @@
     right: 0;
   }
   .container:nth-child(2):hover {
-    background-image: url("./icons/games_svg/lol.svg");
+    background-image: url("./icons/games_svg/lol.svg") !important;
   }
 
   :nth-child(3) {
@@ -67,7 +68,7 @@
     top: 200px;
   }
   .container:nth-child(3):hover {
-    background-image: url("./icons/games_svg/csgo.svg");
+    background-image: url("./icons/games_svg/csgo.svg") !important;
   }
 
   :nth-child(4) {
@@ -76,7 +77,7 @@
     left: 0;
   }
   .container:nth-child(4):hover {
-    background-image: url("./icons/games_svg/fortnite.svg");
+    background-image: url("./icons/games_svg/fortnite.svg") !important;
   }
 
   :nth-child(5) {
@@ -85,7 +86,7 @@
     right: 0;
   }
   .container:nth-child(5):hover {
-    background-image: url("./icons/games_svg/starcraft.svg");
+    background-image: url("./icons/games_svg/starcraft.svg") !important;
   }
 
   :nth-child(6) {
@@ -94,7 +95,7 @@
     top: 500px;
   }
   .container:nth-child(6):hover {
-    background-image: url("./icons/games_svg/pubg.svg");
+    background-image: url("./icons/games_svg/pubg.svg") !important;
   }
 
   :nth-child(7) {
@@ -103,7 +104,7 @@
     left: 0;
   }
   .container:nth-child(7):hover {
-    background-image: url("./icons/games_svg/valorant.svg");
+    background-image: url("./icons/games_svg/valorant.svg") !important;
   }
 
   :nth-child(8) {
@@ -112,7 +113,7 @@
     right: 0;
   }
   .container:nth-child(8):hover {
-    background-image: url("./icons/games_svg/overwatch.svg");
+    background-image: url("./icons/games_svg/overwatch.svg") !important;
   }
 
   :nth-child(9) {
@@ -122,7 +123,7 @@
     top: 800px;
   }
   .container:nth-child(9):hover {
-    background-image: url("./icons/games_svg/rocket_league.svg");
+    background-image: url("./icons/games_svg/rocket_league.svg") !important;
   }
 
   :nth-child(10) {
@@ -132,7 +133,7 @@
     top: 925px;
   }
   .container:nth-child(10):hover {
-    background-image: url("./icons/games_svg/cod.svg");
+    background-image: url("./icons/games_svg/cod.svg") !important;
   }
 }
 
@@ -154,7 +155,7 @@
 }
 
 #choose_game fieldset .container:hover span {
-  opacity: 0.12 !important;
+  opacity: 0.1 !important;
 }
 
 @media (min-width: 1000px) {
