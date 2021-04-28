@@ -47,95 +47,95 @@
     padding: 0;
   }
 
-  .container:nth-child(1) {
+  .container:nth-child(2) {
     background-image: url("/icons/games_svg_gray/dota.svg");
     top: 50px;
     left: 0;
   }
-  .container:nth-child(1):hover {
+  .container:nth-child(2):hover {
     background-image: url("/icons/games_svg/dota.svg") !important;
   }
 
-  .container:nth-child(2) {
+  .container:nth-child(3) {
     background-image: url("/icons/games_svg_gray/lol.svg");
     top: 50px;
     right: 0;
   }
-  .container:nth-child(2):hover {
+  .container:nth-child(3):hover {
     background-image: url("/icons/games_svg/lol.svg") !important;
   }
 
-  :nth-child(3) {
+  .container:nth-child(4) {
     background-image: url("/icons/games_svg_gray/csgo.svg");
     width: 230px;
     top: 200px;
   }
-  .container:nth-child(3):hover {
+  .container:nth-child(4):hover {
     background-image: url("/icons/games_svg/csgo.svg") !important;
   }
 
-  :nth-child(4) {
+  :nth-child(5) {
     background-image: url("/icons/games_svg_gray/fortnite.svg");
     top: 350px;
     left: 0;
   }
-  .container:nth-child(4):hover {
+  .container:nth-child(5):hover {
     background-image: url("/icons/games_svg/fortnite.svg") !important;
   }
 
-  :nth-child(5) {
+  :nth-child(6) {
     background-image: url("/icons/games_svg_gray/starcraft.svg");
     top: 350px;
     right: 0;
   }
-  .container:nth-child(5):hover {
+  .container:nth-child(6):hover {
     background-image: url("/icons/games_svg/starcraft.svg") !important;
   }
 
-  :nth-child(6) {
+  :nth-child(7) {
     background-image: url("/icons/games_svg_gray/pubg.svg");
     width: 175px;
     top: 500px;
   }
-  .container:nth-child(6):hover {
+  .container:nth-child(7):hover {
     background-image: url("/icons/games_svg/pubg.svg") !important;
   }
 
-  :nth-child(7) {
+  :nth-child(8) {
     background-image: url("/icons/games_svg_gray/valorant.svg");
     top: 650px;
     left: 0;
   }
-  .container:nth-child(7):hover {
+  .container:nth-child(8):hover {
     background-image: url("/icons/games_svg/valorant.svg") !important;
   }
 
-  :nth-child(8) {
+  :nth-child(9) {
     background-image: url("/icons/games_svg_gray/overwatch.svg");
     top: 650px;
     right: 0;
   }
-  .container:nth-child(8):hover {
+  .container:nth-child(9):hover {
     background-image: url("/icons/games_svg/overwatch.svg") !important;
   }
 
-  :nth-child(9) {
+  :nth-child(10) {
     background-image: url("/icons/games_svg_gray/rocket_league.svg");
     height: 73px;
     width: 200px;
     top: 800px;
   }
-  .container:nth-child(9):hover {
+  .container:nth-child(10):hover {
     background-image: url("/icons/games_svg/rocket_league.svg") !important;
   }
 
-  :nth-child(10) {
+  :nth-child(11) {
     background-image: url("/icons/games_svg_gray/cod.svg");
     height: 35px;
     width: 190px;
     top: 925px;
   }
-  .container:nth-child(10):hover {
+  .container:nth-child(11):hover {
     background-image: url("/icons/games_svg/cod.svg") !important;
   }
 }
@@ -166,51 +166,51 @@
     width: 1200px;
     height: 400px;
 
-    .container:nth-child(1) {
+    .container:nth-child(2) {
       top: 50px;
       left: 250px;
     }
 
-    .container:nth-child(2) {
+    .container:nth-child(3) {
       top: 50px;
       right: 700px;
     }
 
-    :nth-child(3) {
+    .container:nth-child(4) {
       top: 200px;
     }
 
-    :nth-child(4) {
+    .container:nth-child(5) {
       top: 50px;
       left: 850px;
     }
 
-    :nth-child(5) {
+    .container:nth-child(6) {
       top: 50px;
       right: 550px;
     }
 
-    :nth-child(6) {
+    .container:nth-child(7) {
       top: 200px;
       right: 265px;
     }
 
-    :nth-child(7) {
+    .container:nth-child(8) {
       top: 200px;
       left: 330px;
     }
 
-    :nth-child(8) {
+    .container:nth-child(9) {
       top: 50px;
       right: 400px;
     }
 
-    :nth-child(9) {
+    .container:nth-child(10) {
       top: 230px;
       right: 20px;
     }
 
-    :nth-child(10) {
+    .container:nth-child(11) {
       top: 264px;
       left: 90px;
     }
