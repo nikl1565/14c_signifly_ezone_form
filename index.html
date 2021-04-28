@@ -1,309 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ezone-Esports</title>
-  </head>
-  <body>
-    <form>
-      <div class="form_slide">
-        <section id="form-slide_first" class="form_slide_section">
-          <!-- FIRST INFO BOX -->
-          <div class="infogroup">
-            <div class="info-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="16" x2="12" y2="12"></line>
-                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-              </svg>
-            </div>
-            <p>Here you will be asked a series o questions, which will help us show the content which is most relevant to you.</p>
-            <div class="side-by-side">
-              <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_second';" value="Go to next slide">I understand</button>
-            </div>
-          </div>
-        </section>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ezone-Esports</title>
+    </head>
+    <body>
+        <form>
+            <div class="form_slide">
+                <section id="form-slide_first" class="form_slide_section">
+                    <div class="form-container">
+                        <!-- FIRST INFO BOX -->
+                        <div class="infogroup">
+                            <div class="info-logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                            </div>
+                            <p>Here you will be asked a series of questions, which will help us show the content which is most relevant to you.</p>
+                            <div class="side-by-side">
+                                <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_second';" value="Go to next slide">Let's start</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-        <section id="form-slide_second" class="form_slide_section">
-          <!-- SECOND INFO BOX -->
-          <div class="infogroup">
-            <div class="info-logo">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="22" y1="12" x2="18" y2="12"></line>
-                <line x1="6" y1="12" x2="2" y2="12"></line>
-                <line x1="12" y1="6" x2="12" y2="2"></line>
-                <line x1="12" y1="22" x2="12" y2="18"></line>
-              </svg>
-            </div>
-            <p>To help us create/share relevant content with you, we need to know what games you are currently playing.</p>
-            <div class="side-by-side">
-              <button type="button" class="button" onclick="window.location.href='#form-slide_first';" value="Go to last slide">Back</button>
-              <button type="button" class="button button--primary" onclick="window.location.href='#choose_game';" value="Go to next slide">Confirm</button>
-            </div>
-          </div>
-        </section>
+                <section id="form-slide_second" class="form_slide_section">
+                    <div class="form-container">
+                        <!-- SECOND INFO BOX -->
+                        <div class="infogroup">
+                            <div class="info-logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="22" y1="12" x2="18" y2="12"></line>
+                                    <line x1="6" y1="12" x2="2" y2="12"></line>
+                                    <line x1="12" y1="6" x2="12" y2="2"></line>
+                                    <line x1="12" y1="22" x2="12" y2="18"></line>
+                                </svg>
+                            </div>
+                            <p>To help us create/share relevant content with you, we need to know what games you are currently playing.</p>
+                            <div class="side-by-side">
+                                <button type="button" class="button" onclick="window.location.href='#form-slide_first';" value="Go to last slide">Back</button>
+                                <button type="button" class="button button--primary" onclick="window.location.href='#choose_game';" value="Go to next slide">Got it</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-        <section id="choose_game" class="form_slide_section">
-          <h1>Choose your Game</h1>
-          <article id="featured_games">
-            <fieldset>
-              <label class="container" for="dota">
-                <input type="checkbox" name="games" id="dota" value="dota" />
-                <span></span>
-              </label>
-              <label class="container" for="lol">
-                <input type="checkbox" name="games" id="lol" value="lol" />
-                <span></span>
-              </label>
-              <label class="container" for="csgo">
-                <input type="checkbox" name="games" id="csgo" value="csgo" />
-                <span></span>
-              </label>
-              <label class="container" for="fortnite">
-                <input type="checkbox" name="games" id="fortnite" value="fortnite" />
-                <span></span>
-              </label>
-              <label class="container" for="starcraft">
-                <input type="checkbox" name="games" id="starcraft" value="starcraft" />
-                <span></span>
-              </label>
-              <label class="container" for="pubg">
-                <input type="checkbox" name="games" id="pubg" value="pubg" />
-                <span></span>
-              </label>
-              <label class="container" for="valorant">
-                <input type="checkbox" name="games" id="valorant" value="valorant" />
-                <span></span>
-              </label>
-              <label class="container" for="overwatch">
-                <input type="checkbox" name="games" id="overwatch" value="overwatch" />
-                <span></span>
-              </label>
-              <label class="container" for="rocket_league">
-                <input type="checkbox" name="games" id="rocket_league" value="rocket_league" />
-                <span></span>
-              </label>
-              <label class="container" for="cod">
-                <input type="checkbox" name="games" id="cod" value="cod" />
-                <span></span>
-              </label>
-            </fieldset>
-          </article>
+                <section id="choose_game" class="form_slide_section">
+                    <div class="form-container">
+                        <h2 class="form-heading">Choose your Games</h2>
+                        <article id="featured_games">
+                            <fieldset>
+                                <label class="container" for="dota">
+                                    <input type="checkbox" name="games" id="dota" value="dota" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="lol">
+                                    <input type="checkbox" name="games" id="lol" value="lol" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="csgo">
+                                    <input type="checkbox" name="games" id="csgo" value="csgo" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="fortnite">
+                                    <input type="checkbox" name="games" id="fortnite" value="fortnite" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="starcraft">
+                                    <input type="checkbox" name="games" id="starcraft" value="starcraft" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="pubg">
+                                    <input type="checkbox" name="games" id="pubg" value="pubg" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="valorant">
+                                    <input type="checkbox" name="games" id="valorant" value="valorant" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="overwatch">
+                                    <input type="checkbox" name="games" id="overwatch" value="overwatch" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="rocket_league">
+                                    <input type="checkbox" name="games" id="rocket_league" value="rocket_league" />
+                                    <span></span>
+                                </label>
+                                <label class="container" for="cod">
+                                    <input type="checkbox" name="games" id="cod" value="cod" />
+                                    <span></span>
+                                </label>
+                            </fieldset>
+                        </article>
 
-          <div class="side-by-side">
-            <button type="button" class="button" onclick="window.location.href='#form-slide_second';" value="Go to last slide">Back</button>
-            <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_third';" value="Go to next slide">Confirm</button>
-          </div>
-        </section>
+                        <div class="side-by-side">
+                            <button type="button" class="button" onclick="window.location.href='#form-slide_second';" value="Go to last slide">Back</button>
+                            <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_third';" value="Go to next slide">Continue</button>
+                        </div>
+                    </div>
+                </section>
 
-        <section id="form-slide_third" class="form_slide_section">
-          <!-- THIRD INFO BOX -->
-          <div class="infogroup">
-            <div class="info-logo">
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-chevron-down"
-              >
-                <path d="M13.75,4.87S12.2,3.47,11.46,5s2,1.31,2.31,1.27,1.9-.5,2.09.54-.08,1.28-1.27,1.7a25.23,25.23,0,0,1-5.8.31" />
-                <line x1="9.91" y1="8.85" x2="9.18" y2="14.75" />
-                <path
-                  d="M8,15.91s4.09-4.4,5.17-4.75,4.6-1.59,7.31,1.47c0,0-.08,9.27-.27,9.62,0,0-12.45-.54-13.84-1.2A5.84,5.84,0,0,1,2.84,14.4,41.15,41.15,0,0,1,6.36,5a12.83,12.83,0,0,1,2-1.82c.31-.12,1.05-1.55,2.82-1.58a7.48,7.48,0,0,1,4.54,1.57,3.28,3.28,0,0,1-.17,3"
-                />
-                <path d="M12,18.18s3.6,1.5,5.75-.88" />
-              </svg>
-            </div>
-            <p>To help us create/share relevant content with you, we need to get to know you better by asking questions about your performance.</p>
-            <div class="side-by-side">
-              <button type="button" class="button" onclick="window.location.href='#choose_game';" value="Go to last slide">Back</button>
-              <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_fourth';" value="Go to next slide">Confirm</button>
-            </div>
-          </div>
-        </section>
+                <section id="form-slide_third" class="form_slide_section">
+                    <div class="form-container">
+                        <!-- THIRD INFO BOX -->
+                        <div class="infogroup">
+                            <div class="info-logo">
+                                <svg
+                                    id="Layer_1"
+                                    data-name="Layer 1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="50"
+                                    height="50"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-chevron-down"
+                                >
+                                    <path d="M13.75,4.87S12.2,3.47,11.46,5s2,1.31,2.31,1.27,1.9-.5,2.09.54-.08,1.28-1.27,1.7a25.23,25.23,0,0,1-5.8.31" />
+                                    <line x1="9.91" y1="8.85" x2="9.18" y2="14.75" />
+                                    <path
+                                        d="M8,15.91s4.09-4.4,5.17-4.75,4.6-1.59,7.31,1.47c0,0-.08,9.27-.27,9.62,0,0-12.45-.54-13.84-1.2A5.84,5.84,0,0,1,2.84,14.4,41.15,41.15,0,0,1,6.36,5a12.83,12.83,0,0,1,2-1.82c.31-.12,1.05-1.55,2.82-1.58a7.48,7.48,0,0,1,4.54,1.57,3.28,3.28,0,0,1-.17,3"
+                                    />
+                                    <path d="M12,18.18s3.6,1.5,5.75-.88" />
+                                </svg>
+                            </div>
+                            <p>To help us create/share relevant content with you, we need to get to know you better by asking questions about your performance.</p>
+                            <div class="side-by-side">
+                                <button type="button" class="button" onclick="window.location.href='#choose_game';" value="Go to last slide">Back</button>
+                                <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_fourth';" value="Go to next slide">Got it</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-        <section id="form-slide_fourth" class="form_slide_section">
-          <!-- SLEEP AND STRESS -->
-          <fieldset class="flow">
-            <legend>Sleep and Stress</legend>
+                <section id="form-slide_fourth" class="form_slide_section">
+                    <div class="form-container">
+                        <!-- SLEEP AND STRESS -->
+                        <fieldset class="flow">
+                            <legend class="form-heading">Sleep and Stress</legend>
 
-            <!-- PLAYTIME -->
-            <p>How many hours do you play video games a day?</p>
-            <div class="form-group">
-              <div class="radio-group">
-                <input class="form-radio" id="playtime_0" type="radio" name="playtime" value="0" checked />
-                <label for="playtime_0">0</label>
-              </div>
+                            <!-- PLAYTIME -->
+                            <p>How many hours do you play video games a day?</p>
+                            <div class="form-group">
+                                <div class="radio-group">
+                                    <input class="form-radio" id="playtime_0" type="radio" name="playtime" value="0" checked />
+                                    <label for="playtime_0">0</label>
+                                </div>
 
-              <div class="radio-group">
-                <input class="form-radio" id="playtime_1" type="radio" name="playtime" value="1-3" />
-                <label for="playtime_1">1-3</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="playtime_2" type="radio" name="playtime" value="3-6" />
-                <label for="playtime_2">3-6</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="playtime_3" type="radio" name="playtime" value="6-9" />
-                <label for="playtime_3">6-9</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="playtime_4" type="radio" name="playtime" value="9-12" />
-                <label for="playtime_4">9-12</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="playtime_5" type="radio" name="playtime" value="12+" />
-                <label for="playtime_5">12+</label>
-              </div>
-            </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="playtime_1" type="radio" name="playtime" value="1-3" />
+                                    <label for="playtime_1">1-3</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="playtime_2" type="radio" name="playtime" value="3-6" />
+                                    <label for="playtime_2">3-6</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="playtime_3" type="radio" name="playtime" value="6-9" />
+                                    <label for="playtime_3">6-9</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="playtime_4" type="radio" name="playtime" value="9-12" />
+                                    <label for="playtime_4">9-12</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="playtime_5" type="radio" name="playtime" value="12+" />
+                                    <label for="playtime_5">12+</label>
+                                </div>
+                            </div>
 
-            <!-- SLEEP -->
-            <div class="formgroup">
-              <p>How many hours of sleep do you get in a day?</p>
-              <div class="radio-group">
-                <input class="form-radio" id="sleep_0" type="radio" name="sleep" value="1-3" />
-                <label for="sleep_0">1-3</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="sleep_1" type="radio" name="sleep" value="3-6" />
-                <label for="sleep_1">3-6</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="sleep_2" type="radio" name="sleep" value="6-9" />
-                <label for="sleep_2">6-9</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="sleep_3" type="radio" name="sleep" value="9-12" />
-                <label for="sleep_3">9-12</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="sleep_4" type="radio" name="sleep" value="12+" />
-                <label for="sleep_4">12+</label>
-              </div>
-            </div>
+                            <!-- SLEEP -->
+                            <div class="formgroup">
+                                <p>How many hours of sleep do you get in a day?</p>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="sleep_0" type="radio" name="sleep" value="1-3" />
+                                    <label for="sleep_0">1-3</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="sleep_1" type="radio" name="sleep" value="3-6" />
+                                    <label for="sleep_1">3-6</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="sleep_2" type="radio" name="sleep" value="6-9" />
+                                    <label for="sleep_2">6-9</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="sleep_3" type="radio" name="sleep" value="9-12" />
+                                    <label for="sleep_3">9-12</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="sleep_4" type="radio" name="sleep" value="12+" />
+                                    <label for="sleep_4">12+</label>
+                                </div>
+                            </div>
 
-            <!-- WELL-RESTED -->
-            <div class="formgroup">
-              <p>Do you feel well-rested after a night of sleep?</p>
-              <div class="radio-group">
-                <input class="form-radio" id="wellrested_0" type="radio" name="wellrested" value="yes" />
-                <label for="wellrested_0">Yes</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="wellrested_1" type="radio" name="wellrested" value="no" />
-                <label for="wellrested_1">No</label>
-              </div>
-            </div>
+                            <!-- WELL-RESTED -->
+                            <div class="formgroup">
+                                <p>Do you feel well-rested after a night of sleep?</p>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="wellrested_0" type="radio" name="wellrested" value="yes" />
+                                    <label for="wellrested_0">Yes</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="wellrested_1" type="radio" name="wellrested" value="no" />
+                                    <label for="wellrested_1">No</label>
+                                </div>
+                            </div>
 
-            <!-- HEADACHE -->
-            <div class="formgroup">
-              <p>How often do you get headaches a month?</p>
-              <div class="radio-group">
-                <input class="form-radio" id="headache_0" type="radio" name="headache" value="0" required />
-                <label for="headache_0">0</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="headache_1" type="radio" name="headache" value="1-2" />
-                <label for="headache_1">1-2</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="headache_2" type="radio" name="headache" value="2-3" />
-                <label for="headache_2">2-3</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="headache_3" type="radio" name="headache" value="3-4" />
-                <label for="headache_3">3-4</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="headache_4" type="radio" name="headache" value="4-5" />
-                <label for="headache_4">4-5</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="headache_5" type="radio" name="headache" value="5-6" />
-                <label for="headache_5">5-6</label>
-              </div>
-              <div class="radio-group">
-                <input class="form-radio" id="headache_6" type="radio" name="headache" value="6+" />
-                <label for="headache_6">6+</label>
-              </div>
-            </div>
+                            <!-- HEADACHE -->
+                            <div class="formgroup">
+                                <p>How often do you get headaches a month?</p>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="headache_0" type="radio" name="headache" value="0" />
+                                    <label for="headache_0">0</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="headache_1" type="radio" name="headache" value="1-2" />
+                                    <label for="headache_1">1-2</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="headache_2" type="radio" name="headache" value="2-3" />
+                                    <label for="headache_2">2-3</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="headache_3" type="radio" name="headache" value="3-4" />
+                                    <label for="headache_3">3-4</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="headache_4" type="radio" name="headache" value="4-5" />
+                                    <label for="headache_4">4-5</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="headache_5" type="radio" name="headache" value="5-6" />
+                                    <label for="headache_5">5-6</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input class="form-radio" id="headache_6" type="radio" name="headache" value="6+" />
+                                    <label for="headache_6">6+</label>
+                                </div>
+                            </div>
 
-            <!-- PREV AND NEXT BUTTONS -->
-            <div class="side-by-side">
-              <button type="button" class="button" onclick="window.location.href='#form-slide_third';" value="Go to last slide">Back</button>
-              <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_fifth';" value="Go to next slide">Confirm</button>
-            </div>
-          </fieldset>
-        </section>
+                            <!-- PREV AND NEXT BUTTONS -->
+                            <div class="side-by-side">
+                                <button type="button" class="button" onclick="window.location.href='#form-slide_third';" value="Go to last slide">Back</button>
+                                <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_fifth';" value="Go to next slide">Continue</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
 
-        <section id="form-slide_fifth" class="form_slide_section">
-          <!-- NUTRITION AND EXERCISE -->
-          <fieldset class="flow">
-            <legend>Nutrition and Exercise</legend>
-            <span>Tell us a bit about your nutritional and work-out habits.</span>
+                <section id="form-slide_fifth" class="form_slide_section">
+                    <div class="form-container">
+                        <!-- NUTRITION AND EXERCISE -->
+                        <fieldset class="flow">
+                            <legend class="form-heading">Nutrition and Exercise</legend>
+                            <span>Tell us a bit about your nutritional and work-out habits.</span>
 
-            <div class="optiongroup">
-              <label for="exercise">On average how many days do you exercise each week?</label>
-              <div class="form-select-group">
-                <select class="form-select" name="exercise" id="exercise">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8+">8+</option>
-                </select>
-                <span class="form-select-arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </span>
-              </div>
-            </div>
+                            <div class="optiongroup">
+                                <label for="exercise">On average how many days do you exercise each week?</label>
+                                <div class="form-select-group">
+                                    <select class="form-select" name="exercise" id="exercise">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8+">8+</option>
+                                    </select>
+                                    <span class="form-select-arrow">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-chevron-down"
+                                        >
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
 
-            <div class="optiongroup">
-              <label for="meals">On average how many meals do you eat in a day?</label>
-              <div class="form-select-group">
-                <select class="form-select" name="meals" id="meals">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8+">8+</option>
-                </select>
-                <span class="form-select-arrow">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </span>
-              </div>
-            </div>
+                            <div class="optiongroup">
+                                <label for="meals">On average how many meals do you eat in a day?</label>
+                                <div class="form-select-group">
+                                    <select class="form-select" name="meals" id="meals">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8+">8+</option>
+                                    </select>
+                                    <span class="form-select-arrow">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-chevron-down"
+                                        >
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
 
-            <!-- PREV AND NEXT BUTTONS -->
-            <div class="side-by-side">
-              <button type="button" class="button" onclick="window.location.href='#form-slide_fourth';" value="Go to last slide">Back</button>
-              <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_sixth';" value="Go to next slide">Confirm</button>
-            </div>
-          </fieldset>
-        </section>
+                            <!-- PREV AND NEXT BUTTONS -->
+                            <div class="side-by-side">
+                                <button type="button" class="button" onclick="window.location.href='#form-slide_fourth';" value="Go to last slide">Back</button>
+                                <button type="button" class="button button--primary" onclick="window.location.href='#form-slide_sixth';" value="Go to next slide">Continue</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
 
         <section id="form-slide_sixth" class="form_slide_section">
           <div class="flow">
@@ -313,7 +347,7 @@
             <div class="form-group">
               <label for="username" class="form-label">Username/gamertag</label>
               <div class="input-group">
-                <input class="form-field" type="text" name="username" id="username" placeholder="username or gametag" minlength="1" required />
+                <input class="form-field" type="text" name="username" id="username" placeholder="Username or gametag" minlength="1" required />
                 <span class="form-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -327,7 +361,7 @@
             <div class="form-group">
               <label class="form-label" for="email">Email address</label>
               <div class="input-group">
-                <input class="form-field" type="email" name="email" id="email" placeholder="email@adress.com" required />
+                <input class="form-field" type="email" name="email" id="email" placeholder="Email@adress.com" required />
                 <span class="form-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -342,7 +376,7 @@
             <div class="form-group">
               <label class="form-label" for="password">Password</label>
               <div class="input-group">
-                <input class="form-field" type="password" name="password" id="password" placeholder="enter password" required />
+                <input class="form-field" type="password" name="password" id="password" placeholder="Enter password" required />
                 <span class="form-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
@@ -356,7 +390,7 @@
             <div class="form-group">
               <label class="form-label" for="confirm_password">Confirm Password</label>
               <div class="input-group">
-                <input class="form-field" type="password" name="confirm_password" id="confirm_password" placeholder="confirm password" required />
+                <input class="form-field" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password" required />
                 <span class="form-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
@@ -835,6 +869,7 @@
             <div class="side-by-side">
               <button class="button" type="button" onclick="window.location.href='#form-slide_fifth';" value="Go to last slide">Back</button>
               <button class="button button--primary" type="submit">Submit</button>
+
             </div>
           </div>
         </section>
