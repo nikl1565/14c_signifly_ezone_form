@@ -18,10 +18,12 @@
   display: flex;
   gap: 1rem;
 
-  .form-group label {
-    color: u.$input-color;
-    font-size: 0.8em;
-  }
+
+    .form-group label {
+        color: u.$input-color;
+        font-size: 0.8em;
+    }
+
 }
 
 label {
@@ -29,6 +31,7 @@ label {
 }
 
 .form-heading {
+
   font-family: u.$heading-font-family;
   font-size: 2.4rem;
   letter-spacing: 0.04em;
