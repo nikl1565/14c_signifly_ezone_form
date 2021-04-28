@@ -1,24 +1,55 @@
 @use "../utilities" as u;
 .infogroup {
-    // margin not working
-    margin: 20px auto;
+  // margin not working
+  margin: 20px auto;
 
-    .info-logo {
-        color: u.$heading-color;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+  .info-logo {
+    color: u.$heading-color;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    button {
-        margin-top: 20px;
-    }
+  button {
+    margin-top: 20px;
+  }
 }
 
 .birthday-form-group {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
+
+  .form-group label {
+    color: u.$input-color;
+    font-size: 0.8em;
+  }
 }
 
 label {
-    display: block;
+  display: block;
+}
+
+.form-heading {
+  font-family: u.$heading-font-family;
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: u.$color-white;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+.form-container {
+  padding: 0 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }

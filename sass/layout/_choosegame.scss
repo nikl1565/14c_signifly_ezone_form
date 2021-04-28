@@ -3,15 +3,9 @@
 #choose_game {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   background-color: $background-color;
-  padding-top: 25px;
-  padding-bottom: 25px;
   overflow-y: scroll;
 
-  h1 {
-    font-size: 2.5rem;
-  }
   fieldset {
     display: flex;
     flex-direction: column;
@@ -20,6 +14,15 @@
     width: 260px;
     height: 1100px;
     position: relative;
+  }
+
+  .form-container {
+    flex-direction: column;
+    max-width: 1300px;
+    align-items: center;
+  }
+  legend {
+    text-align: center;
   }
 }
 
@@ -158,19 +161,19 @@
   opacity: 0.1 !important;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   #choose_game fieldset {
-    width: 1000px;
+    width: 1200px;
     height: 400px;
 
     .container:nth-child(1) {
       top: 50px;
-      left: 150px;
+      left: 250px;
     }
 
     .container:nth-child(2) {
       top: 50px;
-      right: 600px;
+      right: 700px;
     }
 
     :nth-child(3) {
@@ -179,37 +182,37 @@
 
     :nth-child(4) {
       top: 50px;
-      left: 750px;
+      left: 850px;
     }
 
     :nth-child(5) {
       top: 50px;
-      right: 450px;
+      right: 550px;
     }
 
     :nth-child(6) {
       top: 200px;
-      right: 165px;
+      right: 265px;
     }
 
     :nth-child(7) {
       top: 200px;
-      left: 230px;
+      left: 330px;
     }
 
     :nth-child(8) {
       top: 50px;
-      right: 300px;
+      right: 400px;
     }
 
     :nth-child(9) {
       top: 230px;
-      right: -80px;
+      right: 20px;
     }
 
     :nth-child(10) {
       top: 264px;
-      left: -10px;
+      left: 90px;
     }
   }
 }

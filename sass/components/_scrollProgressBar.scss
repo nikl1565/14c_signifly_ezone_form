@@ -73,3 +73,36 @@ nav {
   background-color: $color-form-primary;
   opacity: 1;
 }
+
+@media (min-width: 800px) {
+  #scrollProgressBarEmpty {
+    width: 40vw;
+    left: calc(50vw - (40vw / 2));
+  }
+  #scrollProgressBar {
+    width: 40vw;
+    left: calc(50vw - (40vw / 2));
+  }
+}
+
+@media (min-width: 1000px) {
+  #scrollProgressBarEmpty {
+    width: 30vw;
+    left: calc(50vw - (30vw / 2));
+  }
+  #scrollProgressBar {
+    width: 30vw;
+    left: calc(50vw - (30vw / 2));
+  }
+}
+
+@media (min-width: 1200px) {
+  #scrollProgressBarEmpty {
+    width: 20vw;
+    left: calc(50vw - (20vw / 2));
+  }
+  #scrollProgressBar {
+    width: 20vw;
+    left: calc(50vw - (20vw / 2));
+  }
+}

@@ -1,7 +1,6 @@
 import { settings } from "./settings";
 
-export async function postForm(event) {
-  event.preventDefault();
+export async function postForm() {
   // Get form
   const form = document.querySelector("form");
 
