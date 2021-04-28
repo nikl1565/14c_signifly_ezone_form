@@ -1,212 +1,218 @@
 @import "../utilities";
 
 #choose_game {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  overflow-y: scroll;
+
+  fieldset {
     display: flex;
     flex-direction: column;
-    background-color: $background-color;
-    overflow-y: scroll;
+    border: 0;
+    align-items: center;
+    width: 260px;
+    height: 1100px;
+    position: relative;
+  }
 
-    h1 {
-        font-size: 2.5rem;
-    }
-    fieldset {
-        display: flex;
-        flex-direction: column;
-        border: 0;
-        align-items: center;
-        width: 260px;
-        height: 1100px;
-        position: relative;
-    }
+  .form-container {
+    flex-direction: column;
+    max-width: 1300px;
+    align-items: center;
+  }
+  legend {
+    text-align: center;
+  }
 }
 
 #choose_game fieldset {
-    .container input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
 
-    .container {
-        width: 100px;
-        height: 100px;
-        cursor: pointer;
-        position: absolute;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        padding: 0;
-    }
+  .container {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0;
+  }
 
-    .container:nth-child(1) {
-        background-image: url("./icons/games_svg_gray/dota.svg");
-        top: 50px;
-        left: 0;
-    }
-    .container:nth-child(1):hover {
-        background-image: url("./icons/games_svg/dota.svg") !important;
-    }
+  .container:nth-child(1) {
+    background-image: url("./icons/games_svg_gray/dota.svg");
+    top: 50px;
+    left: 0;
+  }
+  .container:nth-child(1):hover {
+    background-image: url("./icons/games_svg/dota.svg") !important;
+  }
 
-    .container:nth-child(2) {
-        background-image: url("./icons/games_svg_gray/lol.svg");
-        top: 50px;
-        right: 0;
-    }
-    .container:nth-child(2):hover {
-        background-image: url("./icons/games_svg/lol.svg") !important;
-    }
+  .container:nth-child(2) {
+    background-image: url("./icons/games_svg_gray/lol.svg");
+    top: 50px;
+    right: 0;
+  }
+  .container:nth-child(2):hover {
+    background-image: url("./icons/games_svg/lol.svg") !important;
+  }
 
-    :nth-child(3) {
-        background-image: url("./icons/games_svg_gray/csgo.svg");
-        width: 230px;
-        top: 200px;
-    }
-    .container:nth-child(3):hover {
-        background-image: url("./icons/games_svg/csgo.svg") !important;
-    }
+  :nth-child(3) {
+    background-image: url("./icons/games_svg_gray/csgo.svg");
+    width: 230px;
+    top: 200px;
+  }
+  .container:nth-child(3):hover {
+    background-image: url("./icons/games_svg/csgo.svg") !important;
+  }
 
-    :nth-child(4) {
-        background-image: url("./icons/games_svg_gray/fortnite.svg");
-        top: 350px;
-        left: 0;
-    }
-    .container:nth-child(4):hover {
-        background-image: url("./icons/games_svg/fortnite.svg") !important;
-    }
+  :nth-child(4) {
+    background-image: url("./icons/games_svg_gray/fortnite.svg");
+    top: 350px;
+    left: 0;
+  }
+  .container:nth-child(4):hover {
+    background-image: url("./icons/games_svg/fortnite.svg") !important;
+  }
 
-    :nth-child(5) {
-        background-image: url("./icons/games_svg_gray/starcraft.svg");
-        top: 350px;
-        right: 0;
-    }
-    .container:nth-child(5):hover {
-        background-image: url("./icons/games_svg/starcraft.svg") !important;
-    }
+  :nth-child(5) {
+    background-image: url("./icons/games_svg_gray/starcraft.svg");
+    top: 350px;
+    right: 0;
+  }
+  .container:nth-child(5):hover {
+    background-image: url("./icons/games_svg/starcraft.svg") !important;
+  }
 
-    :nth-child(6) {
-        background-image: url("./icons/games_svg_gray/pubg.svg");
-        width: 175px;
-        top: 500px;
-    }
-    .container:nth-child(6):hover {
-        background-image: url("./icons/games_svg/pubg.svg") !important;
-    }
+  :nth-child(6) {
+    background-image: url("./icons/games_svg_gray/pubg.svg");
+    width: 175px;
+    top: 500px;
+  }
+  .container:nth-child(6):hover {
+    background-image: url("./icons/games_svg/pubg.svg") !important;
+  }
 
-    :nth-child(7) {
-        background-image: url("./icons/games_svg_gray/valorant.svg");
-        top: 650px;
-        left: 0;
-    }
-    .container:nth-child(7):hover {
-        background-image: url("./icons/games_svg/valorant.svg") !important;
-    }
+  :nth-child(7) {
+    background-image: url("./icons/games_svg_gray/valorant.svg");
+    top: 650px;
+    left: 0;
+  }
+  .container:nth-child(7):hover {
+    background-image: url("./icons/games_svg/valorant.svg") !important;
+  }
 
-    :nth-child(8) {
-        background-image: url("./icons/games_svg_gray/overwatch.svg");
-        top: 650px;
-        right: 0;
-    }
-    .container:nth-child(8):hover {
-        background-image: url("./icons/games_svg/overwatch.svg") !important;
-    }
+  :nth-child(8) {
+    background-image: url("./icons/games_svg_gray/overwatch.svg");
+    top: 650px;
+    right: 0;
+  }
+  .container:nth-child(8):hover {
+    background-image: url("./icons/games_svg/overwatch.svg") !important;
+  }
 
-    :nth-child(9) {
-        background-image: url("./icons/games_svg_gray/rocket_league.svg");
-        height: 73px;
-        width: 200px;
-        top: 800px;
-    }
-    .container:nth-child(9):hover {
-        background-image: url("./icons/games_svg/rocket_league.svg") !important;
-    }
+  :nth-child(9) {
+    background-image: url("./icons/games_svg_gray/rocket_league.svg");
+    height: 73px;
+    width: 200px;
+    top: 800px;
+  }
+  .container:nth-child(9):hover {
+    background-image: url("./icons/games_svg/rocket_league.svg") !important;
+  }
 
-    :nth-child(10) {
-        background-image: url("./icons/games_svg_gray/cod.svg");
-        height: 35px;
-        width: 190px;
-        top: 925px;
-    }
-    .container:nth-child(10):hover {
-        background-image: url("./icons/games_svg/cod.svg") !important;
-    }
+  :nth-child(10) {
+    background-image: url("./icons/games_svg_gray/cod.svg");
+    height: 35px;
+    width: 190px;
+    top: 925px;
+  }
+  .container:nth-child(10):hover {
+    background-image: url("./icons/games_svg/cod.svg") !important;
+  }
 }
 
 #choose_game fieldset span {
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-    border-radius: 6%;
-    margin-left: -20px;
-    margin-top: -20px;
-    display: flex;
-    background-color: #cacffa;
-    opacity: 0;
-    padding: -50px;
-    transition: all 0.2s;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  border-radius: 6%;
+  margin-left: -20px;
+  margin-top: -20px;
+  display: flex;
+  background-color: #cacffa;
+  opacity: 0;
+  padding: -50px;
+  transition: all 0.2s;
 }
 
 #choose_game fieldset input[type="checkbox"]:checked + span {
-    opacity: 0.06;
+  opacity: 0.06;
 }
 
 #choose_game fieldset .container:hover span {
-    opacity: 0.1 !important;
+  opacity: 0.1 !important;
 }
 
-@media (min-width: 1000px) {
-    #choose_game fieldset {
-        width: 1000px;
-        height: 400px;
+@media (min-width: 1200px) {
+  #choose_game fieldset {
+    width: 1200px;
+    height: 400px;
 
-        .container:nth-child(1) {
-            top: 50px;
-            left: 150px;
-        }
-
-        .container:nth-child(2) {
-            top: 50px;
-            right: 600px;
-        }
-
-        :nth-child(3) {
-            top: 200px;
-        }
-
-        :nth-child(4) {
-            top: 50px;
-            left: 750px;
-        }
-
-        :nth-child(5) {
-            top: 50px;
-            right: 450px;
-        }
-
-        :nth-child(6) {
-            top: 200px;
-            right: 165px;
-        }
-
-        :nth-child(7) {
-            top: 200px;
-            left: 230px;
-        }
-
-        :nth-child(8) {
-            top: 50px;
-            right: 300px;
-        }
-
-        :nth-child(9) {
-            top: 230px;
-            right: -80px;
-        }
-
-        :nth-child(10) {
-            top: 264px;
-            left: -10px;
-        }
+    .container:nth-child(1) {
+      top: 50px;
+      left: 250px;
     }
+
+    .container:nth-child(2) {
+      top: 50px;
+      right: 700px;
+    }
+
+    :nth-child(3) {
+      top: 200px;
+    }
+
+    :nth-child(4) {
+      top: 50px;
+      left: 850px;
+    }
+
+    :nth-child(5) {
+      top: 50px;
+      right: 550px;
+    }
+
+    :nth-child(6) {
+      top: 200px;
+      right: 265px;
+    }
+
+    :nth-child(7) {
+      top: 200px;
+      left: 330px;
+    }
+
+    :nth-child(8) {
+      top: 50px;
+      right: 400px;
+    }
+
+    :nth-child(9) {
+      top: 230px;
+      right: 20px;
+    }
+
+    :nth-child(10) {
+      top: 264px;
+      left: 90px;
+    }
+  }
 }
