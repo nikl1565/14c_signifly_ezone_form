@@ -47,6 +47,9 @@ function progressBar() {
 
     const button7f = document.querySelector("#form-slide_sixth button:last-child");
 
+    //eigths slide
+    const button8b = document.querySelector("#form-slide_seventh button:first-child");
+
     //slide 1
 
     //next 
@@ -119,6 +122,13 @@ function progressBar() {
     button7f.addEventListener("click", function(){
         nextPoint(barNodeList[6],circleNodeList[7]);
     });
+
+    //slide 7
+
+    //back
+    button8b.addEventListener("click", function(){
+        previousPoint(barNodeList[6],circleNodeList[7]);
+});
 }
 
 
