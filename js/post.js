@@ -51,8 +51,14 @@ export async function postForm(e) {
     submitBtn.style.backgroundColor = "#abf49d";
     submitBtn.style.borderColor = "#abf49d";
     submitBtn.textContent = "Submitted";
+
+    document.querySelector("#form-slide-eigth").scrollIntoView({ behavior: "smooth", block: "end" });
   } else {
+    const submitBtn = document.querySelector("button[type=submit]");
     // Else show error
+    submitBtn.style.backgroundColor = "#b94a37";
+    submitBtn.style.borderColor = "#b94a37";
+    submitBtn.textContent = "Try again";
     console.log(`HTTP-Error: ${response.status}`);
   }
 
