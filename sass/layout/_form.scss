@@ -1,22 +1,22 @@
 @use "../utilities" as u;
 .infogroup {
-  // margin not working
-  margin: 20px auto;
+    // margin not working
+    margin: 20px auto;
 
-  .info-logo {
-    color: u.$heading-color;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    .info-logo {
+        color: u.$heading-color;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-  button {
-    margin-top: 20px;
-  }
+    button {
+        margin-top: 20px;
+    }
 }
 
 .birthday-form-group {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 
     .form-group label {
         color: u.$input-color;
@@ -25,7 +25,7 @@
 }
 
 label {
-  display: block;
+    display: block;
 }
 
 .form-heading {
@@ -34,6 +34,11 @@ label {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: u.$color-white;
+    margin-top: 2rem;
+}
+
+.form-heading + p {
+    margin-top: 0;
 }
 
 fieldset {
@@ -50,4 +55,11 @@ legend {
     max-width: 900px;
     margin: 0 auto;
     flex-grow: 1;
+
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.optiongroup > label {
+    margin-bottom: 1em;
 }

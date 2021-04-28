@@ -6,7 +6,6 @@
 body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
-    overflow-x: hidden;
 }
 
 .form_slide {
@@ -14,7 +13,6 @@ body {
     flex-direction: row;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    padding: 2rem 0;
     align-items: flex-start;
 }
 
@@ -25,10 +23,13 @@ body {
     justify-content: center;
     width: 100vw;
     min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .side-by-side {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    margin-bottom: 2rem;
 }
