@@ -33,6 +33,18 @@
         &:focus ~ .form-select-arrow > svg {
             stroke: $input-focus-color;
         }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active,
+        &:-internal-autofill-previewed,
+        &:-internal-autofill-selected {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            -webkit-box-shadow: 0 0 0 1000px #16152b inset !important;
+            -webkit-text-fill-color: $input-color;
+        }
     }
 
     .form-select-arrow {
