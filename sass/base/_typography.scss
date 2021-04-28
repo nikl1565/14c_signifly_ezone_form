@@ -1,25 +1,25 @@
 @use "../utilities" as u;
 
 body {
-  font-family: u.$text-font-family;
+    font-family: u.$text-font-family;
 }
 
 h1 {
-  font-size: u.$h1-font-size;
-  font-family: u.$heading-font-family;
-  font-weight: u.$h1-font-weight;
-  line-height: u.$h1-line-height;
-  text-transform: uppercase;
-  color: u.$heading-color;
+    font-size: u.$h1-font-size;
+    font-family: u.$heading-font-family;
+    font-weight: u.$h1-font-weight;
+    line-height: u.$h1-line-height;
+    text-transform: uppercase;
+    color: u.$heading-color;
 }
 
 h2 {
-  color: u.$heading-color;
-  font-family: u.$subheading-font-family;
+    color: u.$heading-color;
+    font-family: u.$subheading-font-family;
 }
 
 p,
 fieldset {
-  font-family: u.$text-font-family;
-  color: u.$font-color;
+    font-family: u.$text-font-family;
+    color: u.$font-color;
 }
